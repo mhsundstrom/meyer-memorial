@@ -28,7 +28,7 @@ SITE_URL = "http://meyer-memorial.mhsundstrom.info/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
 BLOG_EMAIL = "mark.sundstrom@gmail.com"
-BLOG_DESCRIPTION = "Meyer Memorial website for John and Donna Meyer"  # (translatable)
+BLOG_DESCRIPTION = "John and Donna Meyer Memorial website"
 
 
 # What is the default language?
@@ -102,16 +102,8 @@ NAVIGATION_LINKS = {
 # just independent HTML pages.
 #
 
-POSTS = (
-("posts/*.md", "posts", "post.tmpl"),
-("posts/*.rst", "posts", "post.tmpl"),
-("posts/*.txt", "posts", "post.tmpl"),
-)
-PAGES = (
-("stories/*.md", "stories", "story.tmpl"),
-("stories/*.rst", "stories", "story.tmpl"),
-("stories/*.txt", "stories", "story.tmpl"),
-)
+POSTS = []
+PAGES = [("pages/*.md", "", "story.tmpl")]
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
@@ -171,7 +163,7 @@ COMPILERS = {
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -362,7 +354,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = ''  #'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -491,6 +483,7 @@ COMMENT_SYSTEM_ID = "nikolademo"
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
+SOCIAL_BUTTONS_CODE = ''
 # SOCIAL_BUTTONS_CODE = """
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
@@ -507,10 +500,10 @@ COMMENT_SYSTEM_ID = "nikolademo"
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
-# COPY_SOURCES = True
+COPY_SOURCES = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
