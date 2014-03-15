@@ -209,7 +209,9 @@ REDIRECTIONS = []
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = [
+    "rsync -av --delete output/ msundstr@msundstr.webfactional.com:webapps/meyer_memorial"
+]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -355,7 +357,8 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = ''  #'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contact info:<a href="mailto:{email}">{author}</a>'
+#'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -383,12 +386,12 @@ CONTENT_FOOTER_FORMATS = {
 # To use comments, you can choose between different third party comment
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus", "facebook" or "isso"
-COMMENT_SYSTEM = "disqus"
+COMMENT_SYSTEM = ""  #"disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = "nikolademo"
+COMMENT_SYSTEM_ID = "" # "nikolademo"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages

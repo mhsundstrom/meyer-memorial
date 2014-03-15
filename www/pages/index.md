@@ -11,6 +11,7 @@
 - [Welcome](welcome.html)
 - [Obituary](obituary.html)
 - [Memorial service](memorial-service.html)
+- [Photo Gallery](photo-gallery.html)
 
 ![John and Donna in Balboa Park, June 2007](Balboa-Park-June-2007.jpg)
 
