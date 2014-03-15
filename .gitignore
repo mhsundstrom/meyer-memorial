@@ -1,0 +1,4 @@
+www/.doit.db
+__pycache__
+www/cache/*
+www/output/*

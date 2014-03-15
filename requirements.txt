@@ -1,0 +1,2 @@
+-e /Users/mark/github/nikola
+Markdown==2.4.0
