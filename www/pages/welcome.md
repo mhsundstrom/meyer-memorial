@@ -8,4 +8,3 @@
 .. type: text
 -->
 
-# Welcome

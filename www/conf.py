@@ -56,13 +56,14 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
 # (the same way you would do with a (translatable) setting.)
-NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
-        ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
-        ('/rss.xml', 'RSS'),
-    ),
-}
+NAVIGATION_LINKS = {}
+# NAVIGATION_LINKS = {
+#     DEFAULT_LANG: (
+#         ('/archive.html', 'Archives'),
+#         ('/categories/index.html', 'Tags'),
+#         ('/rss.xml', 'RSS'),
+#     ),
+# }
 
 # Below this point, everything is optional
 
@@ -653,7 +654,7 @@ COPY_SOURCES = False
 # TIMEZONE = 'UTC'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]

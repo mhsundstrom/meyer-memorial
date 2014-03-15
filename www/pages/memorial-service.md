@@ -8,7 +8,6 @@
 .. type: text
 -->
 
-# Memorial service
 
 The memorial service for John K Meyer was on November 2nd, 2013. Here is a copy of the program.
 
